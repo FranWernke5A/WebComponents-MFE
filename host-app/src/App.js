@@ -1,10 +1,12 @@
-import myLateral from 'my-lateral';
+import React from "react";
+import './lateral/index';
 
 function App() {
   return (
     <div className="App">
       <header>Header of the application</header>
-      <myLateral></myLateral>
+      <my-lateral></my-lateral>
+      <p>Bananas amarelas</p>
     </div>
   );
 }
