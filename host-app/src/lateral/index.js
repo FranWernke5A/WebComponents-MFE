@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom';
 import MyLateral from './MyLateral';
 
 export default class Lateral extends HTMLElement {
-  connectedCallback() {
+
+  constructor() {
+    super();
     this.root = this.attachShadow({mode: 'open'});
+  }
+
+  connectedCallback() {
     this.render();
   }
 
@@ -20,4 +25,6 @@ export default class Lateral extends HTMLElement {
   }
 }
 
-customElements.define('my-lateral', Lateral);
+if (!customElements.get('my-lateral')) {
+  customElements.define('my-lateral', Lateral);
+}

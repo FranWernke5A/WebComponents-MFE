@@ -1,0 +1,11 @@
+h2 {
+	position: relative;
+	bottom: 1rem;
+	color: red;
+	background-color: red;
+}
+
+.footer {
+	color: red;
+	background-color: red;
+}
